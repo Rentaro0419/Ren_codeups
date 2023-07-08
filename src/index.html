@@ -31,7 +31,25 @@
       rel="stylesheet" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__block">
+          <div class="header__logo">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 430px)" srcset="../../assets/images/common/logo.png" />
+                <img src="../../assets/images/common/logo-sp.png" alt="codeups" />
+              </picture>    
+            </a>
+          </div>
+          <div class="header__drawer header__hamberger js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <div class="inner">
         <div class="voice-card">
@@ -47,9 +65,9 @@
                 </div>
               </div>
             </div>
-              <figure class="voice-card__img">
-                <img src="../../assets/images/common/voice1.jpg" alt="帽子をかぶる女性">
-              </figure>
+            <figure class="voice-card__img">
+              <img src="../../assets/images/common/voice1.jpg" alt="帽子をかぶる女性">
+            </figure>
           </div>
           <div class="voice-card__body">
             <p>
@@ -71,43 +89,68 @@
             <div class="blog-card__content">
               <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-            </div>
-          </div>
-        </div>
-        <div class="title">
-          <span class="title-en">About us</span>
-          <h2 class="title-jp">私たちについて</h2>
-        </div>
-        <div class="campaign-card">
-          <div class="campaign-card__img">
-            <img src="../../assets/images/common/campaign1.jpg" alt="色鮮やかな魚">
-          </div>
-          <div class="campaign-card__body">
-            <div class="campaign-card__meta">
-              <span class="campaign-card__meta-tag">ライセンス講習</span>
-              <p class="campaign-card__meta-title">ライセンス講習</p>
-            </div>
-            <div class="campaign-card__price">
-              <p class="campaign-card__price-plan">全部コミコミ(お一人様)</p>
-              <div class="campaign-card__price-box">
-                <p class="campaign-card__price-original">&yen;56,000</p>
-                <p class="campaign-card__price-discount">&yen;46,000</p>
               </div>
             </div>
           </div>
+          <div class="title">
+            <span class="title-en">About us</span>
+            <h2 class="title-jp">私たちについて</h2>
+          </div>
+          <div class="campaign-card">
+            <div class="campaign-card__img">
+              <img src="../../assets/images/common/campaign1.jpg" alt="色鮮やかな魚">
+            </div>
+            <div class="campaign-card__body">
+              <div class="campaign-card__meta">
+                <span class="campaign-card__meta-tag">ライセンス講習</span>
+                <p class="campaign-card__meta-title">ライセンス講習</p>
+              </div>
+              <div class="campaign-card__price">
+                <p class="campaign-card__price-plan">全部コミコミ(お一人様)</p>
+                <div class="campaign-card__price-box">
+                  <p class="campaign-card__price-original">&yen;56,000</p>
+                  <p class="campaign-card__price-discount">&yen;46,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="title">
+            <span class="title-en title-en--large">Contact</span>
+            <h2 class="title-jp">お問い合わせ</h2>
+          </div>
+          <div class="btn">
+            <a href="#" class="common-btn">
+              <p>Contact us</p>
+            </a>
+          </div>
+          <a href="#" class="pagetop-btn"></a>
         </div>
-        <div class="title">
-          <span class="title-en title-en--large">Contact</span>
-          <h2 class="title-jp">私たちについて</h2>
-        </div>
-        <div class="btn">
-          <a href="#" class="common-btn">
-            <p>Contact us</p>
-          </a>
-        </div>
-        <a href="#" class="pagetop-btn"></a>
-      </div>
-    </main>
+        <section class="top-info information">
+          <div class="information__inner inner">
+            <div class="information-title">
+              <div class="title">
+                <span class="title-en">Information</span>
+                <h2 class="title-jp">ダイビング情報</h2>
+              </div>  
+            </div>
+            <div class="information__block">
+              <div class="information__img">
+                <img src="../../assets/images/common/information.jpg" alt="綺麗な海とチョウチョウウオ">
+              </div>
+              <div class="information__content">
+                <h3 class="information__content-title">ライセンス講習</h3>
+                <p class="information__content-text">当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br>
+                  正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。</p>
+                  <div class="information__btn">
+                    <a href="#" class="common-btn">
+                      <p>View more</p>
+                    </a>        
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     <footer></footer>
   </body>
 </html>

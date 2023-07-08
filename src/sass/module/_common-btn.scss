@@ -11,7 +11,7 @@
   font-size: rem(14);
   line-height: calc(22/14);
   padding: rem(16);
-
+  z-index: 10;
   @include mq(md) {
     width: rem(206);
   }
@@ -25,7 +25,7 @@
   top: rem(6);
   left: rem(6);
   width: calc(100% - 2px);
-  z-index: -1;
+  z-index: 5;
 }
 
 .common-btn p {

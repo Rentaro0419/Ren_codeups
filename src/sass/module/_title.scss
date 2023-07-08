@@ -18,6 +18,9 @@
 .title-en--large{
   font-size: rem(80);
   line-height: calc(80/80);
+  @include mq(md){
+    font-size: rem(80);
+  }
 }
 
 .title-en::first-letter{
