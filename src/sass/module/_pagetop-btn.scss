@@ -1,20 +1,27 @@
 @use "global" as *;
 
-.pagetop-btn{
-  display: block;
+.pagetop{
+  position: fixed;
+  right: rem(15);
+  bottom: rem(16);
+}
+
+.pagetop-btn {
+  display: inline-block;
   width: rem(48);
   height: rem(48);
   border: 1px solid $green;
   border-radius: 50%;
   transform: rotate(90deg);
   position: relative;
-  @include mq(md){
-      width: rem(80);
-      height: rem(80);
+
+  @include mq(md) {
+    width: rem(80);
+    height: rem(80);
   }
 }
 
-.pagetop-btn:after{
+.pagetop-btn:after {
   position: absolute;
   top: 47%;
   left: 25%;
@@ -25,7 +32,8 @@
   border-top: solid 1px;
   border-left: solid 1px;
   transform: skew(45deg);
-  @include mq(md){
+
+  @include mq(md) {
     width: rem(40);
     height: rem(6);
   }

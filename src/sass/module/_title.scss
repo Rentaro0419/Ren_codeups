@@ -23,8 +23,17 @@
   }
 }
 
+
 .title-en::first-letter{
   color: $green;
+}
+
+.title-en--white{
+  color: $white;
+}
+
+.title-en--white::first-letter{
+  color: $green2;
 }
 
 .title-jp{
@@ -34,3 +43,6 @@
   color: $green;
 }
 
+.title-jp--white{
+  color: $white;
+}
