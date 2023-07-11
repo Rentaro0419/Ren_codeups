@@ -35,6 +35,9 @@
   width: 51.76%;
   padding-bottom: rem(4);
   border-bottom: 1px solid $green;
+  @include mq(md){
+      width: 62%;
+  }
 }
 
 .voice-card__meta-age {

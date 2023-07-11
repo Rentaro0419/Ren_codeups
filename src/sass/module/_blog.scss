@@ -1,0 +1,40 @@
+@use "global" as *;
+
+
+.blog__bg{
+  width: 100%;
+  @include mq(md){
+    background: url(../../assets/images/common/blog-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: rem(500);
+    padding-top: rem(100);
+  }
+}
+
+.blog__list{
+  @include mq(md){
+    margin-top: rem(-240);
+  }
+}
+
+.blog__items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: rem(40);
+  @include mq(md){
+      flex-direction: row;
+  }
+}
+
+.blog__btn{
+  margin-top: rem(40);
+  display: flex;
+  justify-content: center;
+  @include mq(md){
+      margin-top: rem(80);
+  }
+}

@@ -29,11 +29,15 @@
 }
 
 .title-en--white{
-  color: $white;
+  @include mq(md){
+    color: $white;
+  }
 }
 
 .title-en--white::first-letter{
-  color: $green2;
+  @include mq(md){
+    color: $green2;
+  }
 }
 
 .title-jp{
@@ -44,5 +48,7 @@
 }
 
 .title-jp--white{
-  color: $white;
+  @include mq(md){
+    color: $white;
+  }
 }

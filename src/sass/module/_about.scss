@@ -1,0 +1,86 @@
+@use "global" as *;
+
+
+.about {
+  position: relative;
+}
+
+.about__img {
+  position: absolute;
+  width: 37.101%;
+  max-width: 100%;
+
+  @include mq(md) {
+    max-width: rem(400);
+    top: rem(106);
+  }
+}
+
+.about__img img {
+  aspect-ratio: 128/194;
+
+  @include mq(md) {
+    aspect-ratio: 400/606;
+  }
+}
+
+.about__img-sp {
+  background: url(../../assets/images/common/about2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 81.4%;
+}
+
+
+.about__content {
+  margin-top: rem(252);
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+
+  @include mq(md) {
+    width: 81.574%;
+    margin-top: rem(120);
+    margin-left: auto;
+    flex-direction: row;
+    gap: rem(40);
+    background: url(../../assets/images/common/about2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: rem(120) rem(41) rem(219) 0;
+  }
+}
+
+.about__content-title {
+  position: relative;
+  z-index: 5;
+  font-family: $forth-font-family;
+  line-height: calc(40/40);
+  font-size: rem(40);
+  color: $green;
+  font-weight: $regular;
+
+  @include mq(md) {
+    line-height: calc(100/80);
+    font-size: rem(80);
+    color: $white;
+  }
+}
+
+.about__content-text p {
+  font-size: rem(16);
+  line-height: calc(24/16);
+
+  @include mq(md) {
+    color: $white;
+    max-width: rem(400);
+  }
+}
+
+.about__content-btn {
+  margin-top: rem(40);
+  display: flex;
+  justify-content: center;
+}
