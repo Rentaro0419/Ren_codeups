@@ -32,8 +32,9 @@
   border-top: solid 1px;
   border-left: solid 1px;
   transform: skew(45deg);
-
+  
   @include mq(md) {
+    top: 49%;
     width: rem(40);
     height: rem(6);
   }

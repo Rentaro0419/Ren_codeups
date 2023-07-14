@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.mv {
+  height: 100vh;
+  min-height: rem(300);
+  width: 100%;
+  position: relative;
+}
+
+.mv__inner {
+  width: 100%;
+  height: inherit;
+}
+
+.mv__slider,
+.mv__swiper-slide picture,
+.mv__swiper-img,
+.mv__swiper-slide img {
+  height: inherit;
+}
+
+.mv__swiper-slide img{
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  aspect-ratio: 375/667;
+  @include mq(md){
+    aspect-ratio: 1440/768;
+  }
+}
+
+.p-campaign-section__swiper,
+.swiper,
+.swiper-initialized,
+.swiper-horizontal,
+.swiper-android,
+.swiper-backface-hidden {
+  padding-bottom: 0;
+}
+
+.mv__title {
+  color: $white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  @include mq(md) {
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.mv__title-main{
+  font-family: $third-font-family;
+  text-transform: uppercase;
+  font-weight: $regular;
+  font-size: rem(40);
+  letter-spacing: 0.5em;
+  transform: translateX(5%);
+  @include mq(md){
+      font-size: rem(80);
+  }
+}
+
+.mv__title-sub{
+  font-family: $forth-font-family;
+  font-size: rem(20);
+  text-align: center;
+}

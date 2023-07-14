@@ -4,7 +4,7 @@
   max-width: 100%;
   width: 100%;
   background: $white;
-  box-shadow: 0 rem(4) rem(4) 0 rgba(0, 0, 0, .4);
+  box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
   padding: rem(15) rem(16) rem(24);
 
   @include mq(md) {

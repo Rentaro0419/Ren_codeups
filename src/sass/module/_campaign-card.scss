@@ -1,7 +1,9 @@
 @use "global" as *;
 
 .campaign-card{
-  box-shadow: 0 rem(4) rem(4) 0 rgba(0, 0, 0, .4);
+  box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 100%;
 }
 
 .campaign-card__img{

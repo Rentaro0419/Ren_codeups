@@ -1,6 +1,9 @@
 
-// jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-// });
+// loading
+$(window).on('load',function(){
+  $(".loading").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+  $(".loading__logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
+});
 
 jQuery(function ($){
 	//ナビパートグル
@@ -14,6 +17,61 @@ jQuery(function ($){
 		}
 	});
 })
+
+//swiper メインビュー
+var swiper1 = new Swiper(".js-main-swiper", {
+  loop: true,
+  effect: "fade",
+  speed: 2000,
+  allowTouchMove: false,
+  autoplay: {
+    delay: 2000,
+  },
+});
+
+//swiper
+const swiper = new Swiper('.js-campaign-swiper', {
+  loop: true,
+  speed: 1000,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1.02,
+      spaceBetween: 18,
+    },
+    375: {
+      slidesPerView: 1.25,
+      spaceBetween: 20,
+    },
+    600: {
+      slidesPerView: 2.4,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 2.7,
+      spaceBetween: 35,
+    },
+    1000: {
+      slidesPerView: 3.2,
+      spaceBetween: 38,
+    },
+    1280: {
+      slidesPerView: 3.4,
+      spaceBetween: 40,
+    },
+    1600: {
+      slidesPerView: 4.2,
+      spaceBetween: 40,
+    },
+  }
+});
 
 
   // ページトップボタン

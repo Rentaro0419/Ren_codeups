@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.swiper-button {
+  position: absolute;
+  top: rem(25);
+  width: rem(80);
+  height: rem(80);
+  transform: 0.3s;
+}
+
+.swiper-button:hover {
+  opacity: 0.7;
+}
+
+.swiper-button-prev {
+  left: calc(50% + 20vw);
+}
+
+.swiper-button-next {
+  left: calc(50% + 32vw);
+}
