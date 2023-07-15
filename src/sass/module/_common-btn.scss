@@ -17,6 +17,14 @@
   }
 }
 
+.common-btn:hover{
+  background: $white;
+  color: $green;
+  border: solid $green 1px;
+  transition: all .4s;
+  opacity: 1;
+}
+
 .common-btn:before {
   content: "";
   position: absolute;
@@ -42,4 +50,9 @@
   margin-left: rem(7);
   margin-bottom: rem(2);
   transform: skewX(45deg);
+}
+
+.common-btn:hover p:after{
+  border-right: 1px solid $green;
+  border-bottom: 1px solid $green;
 }

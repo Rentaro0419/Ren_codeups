@@ -35,7 +35,11 @@
 }
 
 .footer__img-sns img{
+  width: rem(24);
   aspect-ratio: 1/1;
+  @include mq(md){
+    width: rem(32);
+  }
 }
 
 .footer__nav{
@@ -46,6 +50,7 @@
   @include mq(md){
     margin-top: rem(12);
       grid-template-columns: repeat(4,1fr);
+      display: flex;
       justify-items: start;
       gap: rem(110);
   }
@@ -58,10 +63,14 @@
 }
 
 .footer__nav-item a{
-  padding-top: rem(12);
-  padding-bottom: rem(12);
+  padding-top: rem(10);
+  padding-bottom: rem(10);
   display: block;
   text-indent: calc(1em + rem(4));
+  @include mq(md){
+    padding-top: rem(12);
+    padding-bottom: rem(12);
+  }
 }
 
 .footer__nav-item:nth-child(2){
@@ -70,17 +79,6 @@
   }
 }
 
-.footer__nav-item:nth-child(3){
-  @include mq(md){
-      order: 1;
-  }
-}
-
-.footer__nav-item:nth-child(4){
-  @include mq(md){
-      order: 3;
-  }
-}
 
 .footer__nav-item--bold{
   font-weight: $bold;
@@ -94,7 +92,9 @@
 }
 
 .footer__nav-item--bold::before{
+  padding-top: rem(5);
   content: url(../../assets/images/common/star-fish.svg);
+  scale: 1.1;
 }
 
 .footer__nav-item--padding a{
@@ -107,17 +107,31 @@
   padding-bottom: rem(12);
 }
 
+.footer__nav-item--paddingbottom:before{
+  padding-top: rem(10);
+  content: url(../../assets/images/common/star-fish.svg);
+  scale: 1.1;
+}
+
 
 .footer__copyright{
   color: $white;
-  text-align: center;
   font-family: $forth-font-family;
   margin-top: rem(20);
   font-size: rem(12);
   line-height: calc(18/12);
+  text-align: center;
   @include mq(md){
       margin-top: rem(60);
       font-size: rem(14);
       line-height: calc(18/14);
+  }
+}
+
+.footer__copyright small{
+  display: block;
+  font-size: rem(12);
+  @include mq(md){
+      font-size: rem(14);
   }
 }

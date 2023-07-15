@@ -7,7 +7,7 @@ $inner: 1080px;
 
 // 余白
 $padding-pc: 25px;
-$padding-sp: 20px;
+$padding-sp: 15px;
 
 ////////////////////
 // フォント設定
@@ -39,4 +39,9 @@ $white: #fff;
 $green: #408F95;
 $green2: #DDF0F1;
 $red: #C94800;
+
+li>a:hover{
+  opacity: .4;
+  transition: all .4s;
+}
 

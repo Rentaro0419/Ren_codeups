@@ -7,7 +7,7 @@
 .contact__bg-img{
   position: absolute;
   top: rem(-30);
-  right: 0;
+  right: rem(15);
   @include mq(md){
     top: rem(-40);
     right: calc(
@@ -31,7 +31,6 @@
   padding-right: rem(30);
   @include mq(md) {
     padding: 0;
-    box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);  
   }
 }
 
@@ -44,10 +43,23 @@
 
   @include mq(md) {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: start;
     gap: rem(82);
-    padding: rem(80) rem(50);
-    padding-right: rem(120);
+    padding: rem(80) rem(50) rem(80);
+  }
+}
+
+.contact__nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: rem(40);
+  @include mq(md) {
+    flex-direction: row;
+    box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);  
+    padding: rem(80) rem(50) rem(80);
+    gap: rem(81);
   }
 }
 
@@ -55,6 +67,7 @@
   max-width: 100%;
   width: 100%;
   @include mq(md) {
+    max-width: rem(525);
     padding-right: rem(81);
     border-right: 1px solid $green;
   }
@@ -86,32 +99,37 @@
   flex-direction: column;
   align-items: center;
   gap: rem(16);
-
+  line-height: calc(24/16);
   @include mq(md) {
     margin-top: rem(24);
     flex-direction: row;
+    align-items: start;
     gap: rem(21);
   }
 }
 
 .contact__address-map iframe {
   width: 100%;
-  max-width: rem(249);
-
+  max-width: 100%;
+  aspect-ratio: 295/160;
   @include mq(md) {
     max-width: rem(273);
+    aspect-ratio: 273/148;
   }
 }
 
 .contact__address-map-text {
-  text-align: center;
   line-height: calc(24/16);
   font-size: rem(16);
-
-  @include mq(md) {
-    text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: rem(4);
+  @include mq(md){
+      justify-content: start;
   }
 }
+
 
 .contact__block {
   @include mq(md) {}

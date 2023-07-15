@@ -2,7 +2,7 @@
 
 .swiper-button {
   position: absolute;
-  top: rem(25);
+  top: rem(20);
   width: rem(80);
   height: rem(80);
   transform: 0.3s;
@@ -13,9 +13,9 @@
 }
 
 .swiper-button-prev {
-  left: calc(50% + 20vw);
+  left: calc(50% + 21vw);
 }
 
 .swiper-button-next {
-  left: calc(50% + 32vw);
+  left: calc(50% + 31.7vw);
 }

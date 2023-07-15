@@ -1,56 +1,60 @@
 @use "global" as *;
 
 .blog-card {
-  display: block;
   max-width: 100%;
-  width: 100%;
   height: 100%;
   box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
   padding: rem(16) rem(16) rem(24);
   background: $white;
-  @include mq(md){
-      width: 33.33333%;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  @include mq(md) {
+    width: calc(33.33333% - 40px * 2 / 3);
   }
 }
 
-.blog-card__img{
+.blog-card__img {
   width: 100%;
   max-width: 100%;
 }
 
-.blog-card__img img{
+.blog-card__img img {
   width: 100%;
   max-width: 100%;
   aspect-ratio: 301/201;
 }
 
-.blog-card__body{
-  margin-top: rem(24);
-  height: inherit;
+.blog-card__body {
+  margin-top: rem(18);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.blog-card__meta{
+.blog-card__meta {
   padding-bottom: rem(4);
   border-bottom: 1px solid $green;
 }
 
-.blog-card__meta-date{
+.blog-card__meta-date {
   font-family: $forth-font-family;
   font-size: rem(12);
   line-height: calc(18/12);
 }
 
-.blog-card__meta-title{
+.blog-card__meta-title {
   font-weight: $medium;
   line-height: calc(24/16);
   font-size: rem(16);
 }
 
-.blog-card__content{
-  margin-top: rem(16);
-  margin-top: auto;
+.blog-card__content {
+  padding-top: rem(16);
+  margin-bottom: auto;
 }
 
-.blog-card__content p{
+.blog-card__content p {
   line-height: calc(24/16);
 }

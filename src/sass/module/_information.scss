@@ -51,6 +51,7 @@
   padding-bottom: rem(4);
   border-bottom: 1px solid $green;
   @include mq(md){
+    font-size: rem(24);
     padding-bottom: rem(8);
   }
 }
