@@ -16,6 +16,10 @@ jQuery(function ($) {
     }
   });
 
+  $(".js-hamburger").on("click", function () {
+    $("body").toggleClass("is-open");
+  });
+
   $(".js-hamburger a").on("click", function () {
     if ($(".js-hamburger").hasClass("is-open")) {
       $(".js-drawer-menu").fadeOut();

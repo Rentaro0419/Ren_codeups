@@ -194,23 +194,6 @@
   text-indent: calc(1em + rem(4));
 }
 
-.header__drawer-nav-item:nth-child(2){
-  @include mq(md){
-      order: 2;
-  }
-}
-
-.header__drawer-nav-item:nth-child(3){
-  @include mq(md){
-      order: 1;
-  }
-}
-
-.footer__nav-item:nth-child(4){
-  @include mq(md){
-      order: 3;
-  }
-}
 
 .header__drawer-nav-item--bold{
   font-weight: $bold;
