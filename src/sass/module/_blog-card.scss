@@ -10,9 +10,6 @@
   flex-direction: column;
   max-width: 100%;
   width: 100%;
-  @include mq(md) {
-    width: calc(33.33333% - 40px * 2 / 3);
-  }
 }
 
 .blog-card__img {

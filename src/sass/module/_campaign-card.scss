@@ -4,9 +4,6 @@
   box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
   width: 100%;
   max-width: 100%;
-  @include mq(md){
-    width: rem(333);
-  }
 }
 
 .campaign-card__img{
@@ -14,8 +11,9 @@
   max-width: 100%;
 }
 
-.campaign-card__img{
+.campaign-card__img img{
   max-width: 100%;
+  object-fit: cover;
   aspect-ratio: 280/188;
   @include mq(md){
       aspect-ratio: 333/223;

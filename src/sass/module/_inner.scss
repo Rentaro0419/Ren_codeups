@@ -12,6 +12,10 @@
       padding-right: $padding-pc;
       padding-left: $padding-pc;
     }
+    @include mq(sm){
+      max-width: rem(600);
+            
+    }
   }
 } @else {
   .inner {

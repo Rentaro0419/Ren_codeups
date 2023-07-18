@@ -58,6 +58,7 @@
 .header__menu-item {
   height: inherit;
   color: $white;
+  position: relative;
 }
 
 .header__menu-item a {
@@ -75,6 +76,26 @@
     padding-left: rem(20);
     padding-right: rem(20);
   }
+}
+
+.header__menu-item a:after {
+  content: '';
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: rem(15);
+  left: 10%;
+  /*線の形状*/
+  width: 80%;
+  height: 2px;
+  background: $white;
+  /*アニメーションの指定*/
+  transition: all .3s;
+  transform: scale(0, 1);/*X方向0、Y方向1*/
+  transform-origin: center top;/*上部中央基点*/
+}
+
+.header__menu-item a:hover:after{
+    transform: scale(1, 1);/*X方向にスケール拡大*/
 }
 
 .header__menu-item-en {
@@ -207,7 +228,7 @@
 }
 
 .header__drawer-nav-item--bold::before{
-  content: url(../../assets/images/common/star-fish.svg);
+  content: url(/assets/images/common/star-fish.svg);
 }
 
 .header__drawer-nav-item--padding a{

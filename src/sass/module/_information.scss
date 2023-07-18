@@ -30,6 +30,7 @@
 .information__img img{
   width: 100%;
   max-width: 100%;
+  object-fit: cover;
   aspect-ratio: 345/227;
   @include mq(md){
     width: 100%;

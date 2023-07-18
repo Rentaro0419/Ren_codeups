@@ -54,7 +54,7 @@
   width: 100%;
   max-width: 100%;
   aspect-ratio: 345/227;
-
+  object-fit: cover;
   @include mq(md) {
     max-width: rem(492);
     aspect-ratio: 492/746;
@@ -99,6 +99,10 @@
   margin-top: rem(8);
   display: flex;
   justify-content: space-between;
+  gap: rem(30);
+  @include mq(md){
+    gap: rem(50);
+  }
 }
 
 .price__btn {
