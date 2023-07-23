@@ -47,6 +47,7 @@
   display: grid;
   grid-template-columns: repeat(2,1fr);
   justify-items: center;
+  gap: 1em;
   @include mq(md){
     margin-top: rem(12);
       grid-template-columns: repeat(4,1fr);
@@ -56,7 +57,14 @@
   }
 }
 
+.footer__nav-items{
+  width: 100%;
+  max-width: 100%;
+}
+
 .footer__nav-item{
+  width: 100%;
+  max-width: 100%;
   color: $white;
   font-size: rem(16);
   font-weight: $regular;

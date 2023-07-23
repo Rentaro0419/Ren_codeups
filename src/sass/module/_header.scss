@@ -198,11 +198,19 @@
 .header__drawer-nav{
   margin-top: rem(45);
   display: grid;
+  gap: 1em;
   grid-template-columns: repeat(2,1fr);
   justify-items: center;
 }
 
+.header__drawer-nav-items{
+  width: 100%;
+  max-width: 100%;
+}
+
 .header__drawer-nav-item{
+  width: 100%;
+  max-width: 100%;
   color: $white;
   font-size: rem(16);
   font-weight: $regular;

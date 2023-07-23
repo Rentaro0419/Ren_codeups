@@ -1,49 +1,51 @@
 @use "global" as *;
 
-.voice{
+.voice {
   position: relative;
 }
 
-.voice__bg-img{
+.voice__bg-img {
   position: absolute;
   top: rem(-120);
   left: calc(
-    ((100vw - rem(1440)) / 2 + rem(100)) - min(rem(0), (100vw - rem(1343)) / 2));
+    ((100vw - rem(1440)) / 2 + rem(100)) - min(rem(0), (100vw - rem(1343)) / 2)
+  );
 }
 
-.voice__bg-img img{
+.voice__bg-img img {
   width: 100%;
   max-width: rem(301);
 }
 
-.voice__bg-img2{
+.voice__bg-img2 {
   position: absolute;
   bottom: rem(-70);
   right: calc(
-    ((100vw - rem(1440)) / 2 + rem(180)) - min(rem(0), (100vw - rem(1343)) / 2));
+    ((100vw - rem(1440)) / 2 + rem(180)) - min(rem(0), (100vw - rem(1343)) / 2)
+  );
 }
 
-.voice__bg-img2 img{
+.voice__bg-img2 img {
   width: 100%;
   max-width: rem(71);
 }
 
-.voice__block{
+.voice__items {
   margin-top: rem(40);
   gap: rem(40);
   display: grid;
-  grid-template-columns: repeat(1,1fr);
-  @include mq(md){
+  grid-template-columns: repeat(1, 1fr);
+  @include mq(md) {
     margin-top: rem(30);
-      grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.voice__btn{
+.voice__btn {
   display: flex;
   justify-content: center;
   margin-top: rem(40);
-  @include mq(md){
-      margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(80);
   }
 }

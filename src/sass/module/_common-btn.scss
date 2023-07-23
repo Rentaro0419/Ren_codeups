@@ -12,16 +12,18 @@
   line-height: calc(22/14);
   padding: rem(16);
   z-index: 10;
+  border: solid 1px transparent; /* 透明な境界線を追加 */
+  box-sizing: border-box; /* ボーダーボックスのサイズをボタンの内側に含める */
   @include mq(md) {
     width: rem(206);
   }
 }
 
-.common-btn:hover{
+.common-btn:hover {
   background: $white;
   color: $green;
-  border: solid $green 1px;
-  transition: all .4s;
+  border-color: $green; /* hover時に境界線の色を変更 */
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
   opacity: 1;
 }
 
@@ -36,7 +38,7 @@
   z-index: 5;
 }
 
-.common-btn:after{
+.common-btn:after {
   background: $white;
   position: absolute;
   top: 0;
@@ -47,17 +49,17 @@
   transform: scale(0, 1);
   transform-origin: left top;
   transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
-  z-index: 6;
+  z-index: 5;
 }
 
-.common-btn:hover:after{
+.common-btn:hover:after {
   transform: scale(1, 1);
 }
 
 .common-btn p {
   text-align: center;
   position: relative;
-  z-index: 7;
+  z-index: 10;
 }
 
 .common-btn p:after {
@@ -70,10 +72,10 @@
   margin-left: rem(7);
   margin-bottom: rem(2);
   transform: skewX(45deg);
-  z-index: 7;
+  z-index: 10;
 }
 
-.common-btn:hover p:after{
+.common-btn:hover p:after {
   border-right: 1px solid $green;
   border-bottom: 1px solid $green;
 }

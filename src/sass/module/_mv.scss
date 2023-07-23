@@ -19,24 +19,29 @@
   height: inherit;
 }
 
-.mv__swiper-slide img{
-  width: 100%;
-  max-width: 100%;
-  object-fit: cover;
-  aspect-ratio: 375/667;
-  @include mq(md){
-    aspect-ratio: 1440/768;
+.mv__swiper-slide {
+  position: relative;
+}
+
+.mv__swiper-slide:before {
+  content: "";
+  display: block;
+  padding-top: calc((667 / 375) * 100%);
+  @include mq(md) {
+    padding-top: calc((768 / 1440) * 100%);
   }
 }
 
-.p-campaign-section__swiper,
-.swiper,
-.swiper-initialized,
-.swiper-horizontal,
-.swiper-android,
-.swiper-backface-hidden {
-  padding-bottom: 0;
+.mv__swiper-slide img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
 
 .mv__title {
   color: $white;
@@ -52,19 +57,19 @@
   }
 }
 
-.mv__title-main{
+.mv__title-main {
   font-family: $third-font-family;
   text-transform: uppercase;
   font-weight: $regular;
   font-size: rem(40);
   letter-spacing: 0.5em;
   transform: translateX(5%);
-  @include mq(md){
-      font-size: rem(80);
+  @include mq(md) {
+    font-size: rem(80);
   }
 }
 
-.mv__title-sub{
+.mv__title-sub {
   font-family: $forth-font-family;
   font-size: rem(20);
   text-align: center;

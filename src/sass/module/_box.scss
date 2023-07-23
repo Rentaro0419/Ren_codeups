@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.voice-card {
+.box {
   max-width: 100%;
   width: 100%;
   background: $white;
@@ -12,7 +12,7 @@
   }
 }
 
-.voice-card__head {
+.box__head {
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -22,7 +22,7 @@
   }
 }
 
-.voice-card__meta {
+.box__meta {
   @include mq(md) {
     display: flex;
     align-items: end;
@@ -30,35 +30,35 @@
   }
 }
 
-.voice-card__block {
+.box__block {
   max-width: 100%;
   width: 51.76%;
   padding-bottom: rem(4);
   border-bottom: 1px solid $green;
-  @include mq(md){
-      width: 62%;
+  @include mq(md) {
+    width: 62%;
   }
 }
 
-.voice-card__meta-age {
+.box__meta-age {
   font-size: rem(12);
-  line-height: calc(18/12);
+  line-height: calc(18 / 12);
 }
 
-.voice-card__meta-tag {
+.box__meta-tag {
   display: inline-block;
   color: $green;
   font-size: rem(12);
   padding: rem(4) rem(12);
   border: $green 1px solid;
-  line-height: calc(22/12);
+  line-height: calc(22 / 12);
 
   @include mq(md) {
     padding: rem(6) rem(16);
   }
 }
 
-.voice-card__title {
+.box__title {
   font-weight: $medium;
   font-size: rem(16);
 
@@ -67,18 +67,18 @@
   }
 }
 
-.voice-card__img {
+.box__img {
   max-width: 100%;
   width: 52%;
   padding-top: rem(9);
-  @include mq(md){
+  @include mq(md) {
     width: 38%;
     padding-top: 0;
     max-width: rem(181);
   }
 }
 
-.voice-card__img img {
+.box__img img {
   max-width: 100%;
   aspect-ratio: 151 / 117;
   object-fit: cover;
@@ -88,14 +88,14 @@
   }
 }
 
-.voice-card__body{
+.box__body {
   margin-top: rem(16);
-  @include mq(md){
-      margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(40);
   }
 }
 
-.voice-card__body p{
+.box__body p {
   font-size: rem(16);
-  line-height: calc(24/16);
+  line-height: calc(24 / 16);
 }
