@@ -119,9 +119,6 @@
       </div>
       <div class="header__drawer js-drawer-menu">
         <div class="header__drawer-inner">
-          <div class="header__drawer-img">
-            <img src="/assets/images/common/logo.png" alt="" />
-          </div>
           <div class="header__drawer-nav">
             <ul class="header__drawer-nav-items">
               <li class="header__drawer-nav-item header__drawer-nav-item--bold">
@@ -390,10 +387,10 @@
             </div>
           </div>
           <div class="slider-button-prev u-desktop slider-button">
-            <img src="../assets/images/common/campaign-next.png" alt="左のキャンペーンカードを選択するボタン" />
+            <img src="../assets/images/common/campaign-prev.png" alt="左のキャンペーンカードを選択するボタン" />
           </div>
           <div class="slider-button-next u-desktop slider-button">
-            <img src="../assets/images/common/campaign-prev.png" alt="右のキャンペーンカードを選択するボタン" />
+            <img src="../assets/images/common/campaign-next.png" alt="右のキャンペーンカードを選択するボタン" />
           </div>
           <div class="campaign__btn">
             <a href="#" class="common-btn">
@@ -411,23 +408,30 @@
             <span class="title-en">About us</span>
             <h2 class="title-jp">私たちについて</h2>
           </div>
-          <div class="about__img u-desktop">
-            <img src="/assets/images/common/about1.jpg" alt="綺麗な青色" />
-          </div>
-          <div class="about__img-sp u-mobile">
-            <img src="/assets/images/common/about-sp.png" alt="綺麗な青色" />
-          </div>
-          <div class="about__content">
-            <h3 class="about__content-title">Dive into <br />the Ocean</h3>
-            <div class="about__content-text">
-              <p>
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              </p>
-              <div class="about__content-btn">
-                <a href="#" class="common-btn">
-                  <p>View more</p>
-                </a>
+          <div class="about__block">
+            <div class="about__img u-desktop">
+              <figure class="about__img-sky">
+                <img src="/assets/images/common/about1.jpg" alt="綺麗な青色">
+              </figure>
+              <figure class="about__img-sea">
+                <img src="/assets/images/common/about2.jpg" alt="綺麗な海">
+              </figure>
+            </div>
+            <figure class="about__img-sp u-mobile">
+              <img src="/assets/images/common/about-sp.png" alt="綺麗な青色" />
+            </figure>
+            <div class="about__content">
+              <h3 class="about__content-title">Dive into <br />the Ocean</h3>
+              <div class="about__content-text">
+                <p>
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                </p>
+                <div class="about__content-btn">
+                  <a href="#" class="common-btn">
+                    <p>View more</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -627,75 +631,76 @@
             <div class="price__block-list">
               <div class="price__block-items">
                 <h3>ライセンス講習</h3>
-                <table>
-                  <tr>
-                    <td>オープンウォーターダイバーコース</td>
-                    <td>&yen;50,000</td>
-                  </tr>
-                  <tr>
-                    <td>アドバンスドオープンウォーターコース</td>
-                    <td>&yen;60,000</td>
-                  </tr>
-                  <tr>
-                    <td>レスキュー＋EFRコース</td>
-                    <td>&yen;70,000</td>
-                  </tr>
-                </table>
+                <dl>
+                  <div class="price__block-item">
+                    <dt>オープンウォーターダイバーコース</dt>
+                    <dd>&yen;50,000</dd>
+                  </div>
+                  <div class="price__block-item">
+                    <dt>アドバンスドオープンウォーターコース</dt>
+                    <dd>&yen;60,000</dd>
+                  </div>
+                  <div class="price__block-item">
+                    <dt>レスキュー＋EFRコース</dt>
+                    <dd>&yen;70,000</dd>
+                  </div>
+                
+                </dl>
               </div>
               <div class="price__block-items">
                 <h3>体験ダイビング</h3>
-                <table>
-                  <tr>
-                    <td>ビーチ体験ダイビング(半日)</td>
-                    <td>&yen;7,000</td>
-                  </tr>
-                  <tr>
-                    <td>ビーチ体験ダイビング(1日)</td>
-                    <td>&yen;14,000</td>
-                  </tr>
-                  <tr>
-                    <td>ボート体験ダイビング(半日)</td>
-                    <td>&yen;10,000</td>
-                  </tr>
-                  <tr>
-                    <td>ボート体験ダイビング(1日)</td>
-                    <td>&yen;18,000</td>
-                  </tr>
-                </table>
+                <dl>
+                  <div class="price__block-item">
+                    <dt>ビーチ体験ダイビング(半日)</dt>
+                    <dd>&yen;7,000</dd>
+                  </div>
+                  <div class="price__block-item">
+                    <dt>ビーチ体験ダイビング(1日)</dt>
+                    <dd>&yen;14,000</dd>
+                  </div>
+                  <div class="price__block-item">
+                    <dt>ボート体験ダイビング(半日)</dt>
+                    <dd>&yen;10,000</dd>
+                  </div>
+                  <div class="price__block-item">
+                    <dt>ボート体験ダイビング(1日)</dt>
+                    <dd>&yen;18,000</dd>
+                  </div>
+                </dl>
               </div>
               <div class="price__block-items">
                 <h3>ファンダイビング</h3>
-                <table>
-                  <tr>
-                    <td>ビーチダイビング(2ダイブ)</td>
-                    <td>&yen;14,000</td>
-                  </tr>
-                  <tr>
-                    <td>ボートダイビング(2ダイブ)</td>
-                    <td>&yen;18,000</td>
-                  </tr>
-                  <tr>
-                    <td>スペシャルダイビング(2ダイブ)</td>
-                    <td>&yen;24,000</td>
-                  </tr>
-                  <tr>
-                    <td>ナイトダイビング(1ダイブ)</td>
-                    <td>&yen;10,000</td>
-                  </tr>
-                </table>
+                <dl>
+                  <div class="price__block-item">
+                    <dt>ビーチダイビング(2ダイブ)</dt>
+                    <dd>&yen;14,000</dd>
+                  </div>
+                  <div class="price__block-item">
+                    <dt>ボートダイビング(2ダイブ)</dt>
+                    <dd>&yen;18,000</dd>
+                  </div>
+                  <div class="price__block-item">
+                    <dt>スペシャルダイビング(2ダイブ)</dt>
+                    <dd>&yen;24,000</dd>
+                  </div>
+                  <div class="price__block-item">
+                    <dt>ナイトダイビング(1ダイブ)</dt>
+                    <dd>&yen;10,000</dd>
+                  </div>
+                </dl>
               </div>
               <div class="price__block-items">
                 <h3>スペシャルダイビング</h3>
-                <table>
-                  <tr>
-                    <td>貸切ダイビング(2ダイブ)</td>
-                    <td>&yen;24,000</td>
-                  </tr>
-                  <tr>
-                    <td>1日ダイビング(3ダイブ)</td>
-                    <td>&yen;32,000</td>
-                  </tr>
-                </table>
+                <dl>
+                  <div class="price__block-item">
+                    <dt>貸切ダイビング(2ダイブ)</dt>
+                    <dd>&yen;24,000</dd>
+                  </div>
+                  <div class="price__block-item">
+                    <dt>1日ダイビング(3ダイブ)</dt>
+                    <dd>&yen;32,000</dd>
+                  </div>
+                </dl>
               </div>
             </div>
           </div>

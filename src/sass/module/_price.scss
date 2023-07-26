@@ -79,7 +79,7 @@
   max-width: 100%;
 }
 
-.price__block-items table {
+.price__block-items dl {
   width: 100%;
 }
 
@@ -90,16 +90,13 @@
   border-bottom: solid 1px $green;
 }
 
-.price__block-items table td {
+.price__block-item{
   font-size: rem(14);
   line-height: calc(24/14);
-}
-
-.price__block-items table tr {
-  margin-top: rem(8);
   display: flex;
   justify-content: space-between;
   gap: rem(30);
+  margin-top: rem(8);
   @include mq(md){
     gap: rem(50);
   }
@@ -107,9 +104,7 @@
 
 .price__btn {
   margin-top: rem(40);
-  display: flex;
-  justify-content: center;
-
+  text-align: center;
   @include mq(md) {
     margin-top: rem(80);
   }

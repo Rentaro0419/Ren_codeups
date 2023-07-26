@@ -53,7 +53,7 @@
       grid-template-columns: repeat(4,1fr);
       display: flex;
       justify-items: start;
-      gap: rem(110);
+      // gap: rem(110);
   }
 }
 
@@ -71,6 +71,7 @@
 }
 
 .footer__nav-item a{
+  width: 100%;
   padding-top: rem(10);
   padding-bottom: rem(10);
   display: block;
