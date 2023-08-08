@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.campaign-card{
+  
+}
+
+.campaign-card__img:before{
+  content: "";
+  display: block;
+  @include mq(md){
+    padding-top: calc((347 / 520) * 100%);
+  }
+}
