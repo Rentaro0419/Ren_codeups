@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.campaign-page{
+  margin-top: rem(52);
+  @include mq(md){
+      margin-top: rem(150);
+  }
+}
+
+.campaign-page__items {
+  margin-top: rem(40);
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-items: center;
+  row-gap: rem(40);
+  @include mq(md){
+    grid-template-columns: repeat(2,1fr);
+    column-gap: rem(40);
+    row-gap: rem(80);
+  }
+}
+
+.campaign-page__item {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
+  max-width: 100%;
+  width: rem(280);
+  @include mq(md){
+    width: 100%;
+  }
+}

@@ -21,7 +21,7 @@ jQuery(function ($) {
   });
 
   $(".js-hamburger__link").on("click", function () {
-        $("body").toggleClass("is-open");
+    $("body").toggleClass("is-open");
 
     if ($(".js-hamburger").hasClass("is-open")) {
       $(".js-drawer-menu").fadeOut();
@@ -50,6 +50,10 @@ const swiper = new Swiper(".js-campaign-swiper", {
   speed: 1000,
   slidesPerView: "auto",
   spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   navigation: {
     nextEl: ".slider-button-next",
     prevEl: ".slider-button-prev",
@@ -64,7 +68,6 @@ const swiper = new Swiper(".js-campaign-swiper", {
     },
   },
 });
-
 
 //画像アニメーション
 var box = $(".js-colorbox"),
@@ -98,9 +101,9 @@ box.each(function () {
               {
                 width: "0%",
               },
-              speed
+              speed,
             );
-          }
+          },
         );
       counter = 1;
     }
@@ -153,7 +156,59 @@ $("#page-top").click(function () {
     {
       scrollTop: 0, //ページトップまでスクロール
     },
-    500
+    500,
   ); //ページトップスクロールの速さ。数字が大きいほど遅くなる
   return false; //リンク自体の無効化
+});
+
+
+//タブメニュー
+const tabList = document.querySelectorAll(".js-tab");
+// タブコンテンツ
+const tabContent = document.querySelectorAll(".js-tab-content");
+ 
+//DOMが読み込み終わったら
+document.addEventListener('DOMContentLoaded', function(){
+  // タブに対してクリックイベントを適用
+  for(let i = 0; i < tabList.length; i++) {
+    tabList[i].addEventListener('click', tabSwitch);
+  }
+  // タブをクリックすると実行する関数
+  function tabSwitch(){
+    // activeクラスを削除
+    document.querySelectorAll('.active')[0].classList.remove('active');
+    // クリックしたタブにactiveクラスを付与    
+    this.classList.add('active');
+    // showクラスを削除
+    document.querySelectorAll('.show')[0].classList.remove('show');
+    // タブを配列風オブジェクトとして定義
+    const aryTabs = Array.prototype.slice.call(tabList);
+    // クリックしたタブの配列番号を取得     
+    const index = aryTabs.indexOf(this);
+    // クリックしたタブと同じ配列番号のタブコンテンツにshowクラスを付与    
+    tabContent[index].classList.add('show');
+  };
+});
+
+//sidebarのアーカイブ部分
+$(function () {
+  $(".js-toggle-item:not(:first-of-type)").css("display", "none");
+  $(".js-toggle-title").on("click", function () {
+    $(".js-toggle-item").slideToggle();
+    $(this).toggleClass("open", 300);
+  });
+});
+
+//faqのクリックメニュー
+//アコーディオンメニュー
+$(function(){
+    //クリックで動く
+    $('.js-faq-title').click(function(){
+        $(this).toggleClass("is-active");
+        $(this).next('').slideToggle();
+    });
+});
+
+// aboutのモーダル
+MicroModal.init({
 });

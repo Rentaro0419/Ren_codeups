@@ -83,6 +83,12 @@
   padding-bottom: rem(8);
 }
 
+.slider__meta-title--large{
+  @include mq(md){
+    font-size: rem(24);
+  }
+}
+
 .slider__price {
   margin-top: rem(8);
 
@@ -161,3 +167,38 @@
   left: calc(100% - rem(340));
 }
 
+.slider__text{
+  @include mq(md){
+      display: block;
+      margin-top: rem(24);
+      font-size: rem(16);
+      line-height: calc(24/16);
+  }
+}
+
+.slider__term{
+  @include mq(md){
+    display: block;
+    margin-top: rem(32);
+    font-family: $third-font-family;
+    color: $green;
+    font-weight: $bold;
+    font-size: rem(16);
+    line-height: calc(18/16);
+    text-align: center;
+  }
+}
+
+.slider__subtext{
+  margin-top: rem(7);
+  color: $green;
+  font-size: rem(14);
+  line-height: calc(18/14);
+  text-align: center;
+  font-weight: $regular;
+}
+
+.slider__btn{
+  margin-top: rem(16);
+  text-align: center;
+}
