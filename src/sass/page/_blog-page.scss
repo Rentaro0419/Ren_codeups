@@ -51,6 +51,8 @@
   }
 }
 
-.blog-page__list .wp-pagenavi{
+
+.blog-page__pagination{
+  display: flex;
   justify-content: center;
 }
