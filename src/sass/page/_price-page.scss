@@ -83,6 +83,7 @@
   content: "";
   background-image: url(../../assets/images/common/wheel-white.svg);
   background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
   top: rem(5);
   left: rem(85);
@@ -113,7 +114,10 @@
   max-width: 100%;
   display: flex;
   align-items: center;
-  width: rem(500);
+  width: 100%;
+  @include mq(md) {
+    width: rem(500);
+  }
 }
 
 .price-page__list:not(:first-child) {
@@ -125,28 +129,28 @@
   max-width: 100%;
   text-align: center;
   padding: rem(4);
+  width: 56.7346938776%;
   border-right: $green solid 1px;
-  width: rem(240);
   @include mq(md) {
     border-right: none;
     text-align: left;
-    width: rem(340);
     padding: rem(18) rem(16);
+    width: 67.7290836653%;
   }
 }
 
-.price-page__detail--short{
+.price-page__detail--short {
   padding: rem(18);
 }
 
 .price-page__price {
   max-width: 100%;
   text-align: right;
-  padding: rem(5);
-  width: rem(106);
+  padding: rem(16);
+  width: 43.2653061224%;
   @include mq(md) {
     border-left: 1px solid $green;
     padding: rem(18) rem(16);
-    width: rem(162);
+    width: 32.2709163347%;
   }
 }

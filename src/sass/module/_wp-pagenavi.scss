@@ -21,7 +21,7 @@
 .wp-pagenavi .page:nth-child(n + 6) {
   display: none;
   @include mq(md) {
-    display: inline-block;
+    display: block;
   }
 }
 

@@ -41,12 +41,9 @@
 
 .blog__items{
   margin-top: rem(24);
-  display: grid;
   gap: rem(40);
-  grid-template-columns: repeat(1,1fr);
   @include mq(md){
     margin-top: rem(80);
-    grid-template-columns: repeat(3,1fr);
   }
 }
 
