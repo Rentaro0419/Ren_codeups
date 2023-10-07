@@ -41,7 +41,6 @@
 
 .blog__items{
   margin-top: rem(24);
-  gap: rem(40);
   @include mq(md){
     margin-top: rem(80);
   }

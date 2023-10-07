@@ -1,8 +1,8 @@
 @use "global" as *;
 
-.campaign-footer{
+.sub-footer {
   margin-top: rem(100);
-  @include mq(md){
+  @include mq(md) {
     margin-top: rem(160);
   }
 }

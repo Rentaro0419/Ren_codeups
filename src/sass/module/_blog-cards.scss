@@ -1,10 +1,16 @@
 @use "global" as *;
 
-.box-col3{
+.blog-cards {
   display: grid;
+  gap: rem(40);
   grid-template-columns: repeat(1, 1fr);
   @include mq(md) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+.blog-cards--col2 {
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
